@@ -1,0 +1,54 @@
+.switchlogo, #ScrollLogo, #DarkLogo, #navbar, #navbar-wrap {
+    transition: .6s all linear;
+}
+
+
+#navbar a {
+
+    color: #ffffff;
+
+}
+
+#mobile-menu-icon {
+
+    color: #ffffff;
+
+}
+
+#mobile-menu-icon.scrolledicon {
+
+    color: #32255B;
+
+}
+
+#navbar.scrolled a {
+    color: #32255B;
+}
+#navbar.scrolled{
+    background: rgba(235,239,247,.85);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+img#DarkLogo {
+    display: inline;
+}
+img#DarkLogo.scrollinglogo
+ {display:none;}
+ #ScrollLogo {
+    display:none;
+}
+
+ img#ScrollLogo.scrollinglogo {
+     display:inline;
+ }
+img#DarkLogo.scrollinglogo {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+#navbar {
+    background: #32255B;
+}}

@@ -1,0 +1,89 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+
+import { typography } from './shared/styles';
+
+<Meta title="Typography" />
+
+# Typography
+
+## Primary Body Font
+
+**Font:** Titillium Web
+**Weights:** 200(light), 300(regular), 700(bold), 800(extrabold), 900(black)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+  ]}
+  fontFamily={typography.type.primary}
+  fontWeight={typography.weight.regular}
+/>
+
+### Primary Body Font in Italics
+
+<Typeset style={typography.italicbody}
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+  ]}
+  fontFamily={typography.type.primary}
+  fontWeight={typography.weight.regular}
+/>
+
+## Heading Font
+
+**Font:** Cabin
+**Weights:** 200(light), 300(regular), 700(bold), 800(extrabold), 900(black)
+
+<Typeset style={typography.heading}
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+  ]}
+  fontFamily={typography.type.heading}
+  fontWeight={typography.weight.regular}
+/>
+
+
+## Preheading Font
+
+**Font:** Homenaje
+**Weights:** 300(regular)
+
+<Typeset style={typography.subheading}
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+  ]}
+  fontFamily={typography.type.subheading}
+  fontWeight={typography.weight.regular}
+/>

@@ -1,0 +1,89 @@
+//@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Titillium+Web&family=Homenaje&display=swap');
+
+h1 {
+    font-family: "Cabin", Impact, sans-serif;
+    font-size: $font-sizes-h1;
+}
+h2, h3, h4, h5, h6 {
+    font-family: "Homenaje", Impact, sans-serif;
+}
+
+h2 {
+    color: $text-colors-h2;
+    font-size: $font-sizes-h2;
+
+}
+
+h3 {
+    color: $text-colors-h3;
+    font-size: $font-sizes-h3;
+
+}
+h4 {
+    color: $text-colors-h4;
+    font-size: $font-sizes-h4;
+
+}
+h5 {
+    color: $text-colors-h5;
+    font-size: $font-sizes-h5;
+
+}
+h6 {
+    color: $text-colors-h6;
+    font-size: $font-sizes-h6;
+
+}
+pre, .quote, code { 
+    font-family: "Cabin", Impact, sans-serif;
+    color: $text-colors-default;
+
+}
+body, p {
+    font-family: "Titillium Web", Impact, sans-serif;
+    color: $text-colors-default;
+    font-size: $font-sizes-p;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    font-weight: normal;
+   color: $text-colors-a;
+   font-weight: bold;
+
+
+}
+
+small, .small, .text-small {
+font-size: $font-sizes-small;
+}
+.tiny, .caption {
+    font-size: $font-sizes-tiny;
+  
+}
+
+.medium, .text-medium {
+    font-size: $size-scale-md;
+}
+
+
+.large, .text-large {
+    font-size: $size-scale-lg;
+}
+
+
+.xl, .text-xl {
+    font-size: $size-scale-xl;
+}
+
+.about-text.text-two {
+    color:#ffffff;
+}
+
+h1 {
+    color: #ffffff;
+}
+a.anchor {
+    color: #ffffff;
+}

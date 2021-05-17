@@ -1,0 +1,352 @@
+@import "../../assets/scss/tokens/config";
+.button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    color: #ffffff;
+    
+    //Button shape & animation
+    border-radius: 10px;
+    margin: 40px !important;
+    padding: 1em 3em;
+    background-size: 200% auto;
+    color: #ffffff;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      background-position: right center;
+      transition: all 1s ease-in-out;
+
+      
+    }  
+  } 
+  .button a {
+    color: #ffffff !important;
+
+  }
+
+  .dietbutton {
+      /*
+    box-shadow: 4px 5px 1px #321E92, 0 1px 3px rgba(0,0,0,.08);*/
+    box-shadow: -10px 8px 9px rgba(25, 1, 52, 0.5);
+
+    background-image: linear-gradient(270deg, #6AA2FF 0%, #6D51F2 100%);
+
+  }
+
+  .sunsjourneybutton {
+    box-shadow: -10px 8px 9px rgba(25, 1, 52, 0.5);
+
+      /*
+    box-shadow: 5px 5px 1px darken(#FF8C61, 30%), 0 1px 3px rgba(0,0,0,.08);*/
+    background-image: linear-gradient(90deg, #FF8C61 27.27%, #FFD100 113.18%);
+
+  }
+
+  .darkknightrisesbutton {
+    box-shadow: -10px 8px 9px rgba(25, 1, 52, 0.5);
+/*
+    box-shadow: 5px 5px 1px darken(#32255B, 30%), 0 1px 3px rgba(0,0,0,.08);*/
+    background-image: linear-gradient(180deg, #32255B 0%, #2B2A36 100%);
+
+  }
+
+
+  .grimmacebutton {
+    box-shadow: -10px 8px 9px rgba(25, 1, 52, 0.5);
+
+   /* box-shadow: 5px 5px 1px darken(#7D1F9D, 30%), 0 1px 3px rgba(0,0,0,.08);*/
+    background-image: linear-gradient(88.11deg, #261F74 1.47%, #7D1F9D 119.06%);
+
+  }
+  .urplebutton {
+    box-shadow: -10px 8px 9px rgba(25, 1, 52, 0.5);
+      /*
+    box-shadow: 5px 5px 1px darken(#5235DD, 30%), 0 1px 3px rgba(0,0,0,.08);*/
+    background-image: linear-gradient(270deg, #2575FC 0%, #5235DD 100%) !important;
+
+  }
+
+
+
+
+  .dietoutlinebutton {
+      border-radius: 10px;
+    background-image: linear-gradient(270deg, #6AA2FF 0%, #6D51F2 100%);
+    color: #321E92 !important;
+
+
+    &::before {
+        background-image: linear-gradient(90deg, #6AA2FF 0%, #6D51F2 100%);
+        border-radius: 10px;
+       /* box-shadow: 5px 5px 1px #321E92, 0 1px 3px rgba(0,0,0,.08);*/
+       box-shadow: -10px 8px 9px rgba(25, 1, 52, 0.5);
+
+
+
+    }
+   
+
+  }
+
+
+
+
+  .sunsjourneyoutlinebutton {
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #FF8C61 27.27%, #FFD100 113.18%);
+  color: #FF8C61 !important;
+
+
+  &::before {
+    background-image: linear-gradient(270deg, #FF8C61 27.27%, #FFD100 113.18%);
+      border-radius: 10px;
+     /* box-shadow: 5px 5px 1px darken(#FF8C61, 30%), 0 1px 3px rgba(0,0,0,.08);*/
+
+
+  }
+}
+
+
+.darkknightrisesoutlinebutton {
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, #32255B 0%, #2B2A36 100%);
+  color: #2B2A36 !important;
+
+
+  &::before {
+    background-image: linear-gradient(60deg, #32255B 0%, #2B2A36 100%);
+      border-radius: 10px;
+     /* box-shadow: 5px 5px 1px darken(#32255B, 30%), 0 1px 3px rgba(0,0,0,.08);*/
+     
+
+
+  }
+}
+
+
+.grimmaceoutlinebutton {
+    border-radius: 10px;
+    background-image: linear-gradient(88.11deg, #261F74 1.47%, #7D1F9D 119.06%);
+  color: #7D1F9D !important;
+
+
+  &::before {
+    background-image: linear-gradient(288.11deg, #261F74 1.47%, #7D1F9D 119.06%);
+      border-radius: 10px;
+     /* box-shadow: 5px 5px 1px darken(#7D1F9D, 30%), 0 1px 3px rgba(0,0,0,.08);*/
+
+  }
+}
+
+
+
+.urpleoutlinebutton {
+    border-radius: 10px;
+    background-image: linear-gradient(270deg, #2575FC 0%, #5235DD 100%);
+    color: #5235DD !important;
+
+
+  &::before {
+    background-image: linear-gradient(90deg, #2575FC 0%, #5235DD 100%);
+      border-radius: 10px;
+   /*   box-shadow: 5px 5px 1px darken(#5235DD, 30%), 0 1px 3px rgba(0,0,0,.08);*/
+
+  }
+
+}
+
+
+.outlinebutton {
+	line-height: 1.0;
+    margin: 40px;
+	text-align: center;
+    padding: 1em 3em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 10px;
+	transition: color 0.3s ease-out, -webkit-text-fill-color 0.3s ease-out;
+	position: relative;
+	display: inline-flex;
+	font-size: 1.5rem;
+
+	
+	&:before {
+		content: "";
+		position: absolute;
+		top: -5px;
+		right: -5px;
+		bottom: -5px;
+		left: -5px;
+		z-index: -1;
+		display: block;
+		border-radius: 10px;
+        box-shadow: -10px 8px 9px rgba(25, 1, 52, 0.5);
+
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		display: block;
+		background-color: #fff;
+		border-radius: 10px;
+		transition: opacity 0.3s ease-out;
+	}
+	
+	&:hover {
+		color: #fff;
+		-webkit-text-fill-color: #fff;
+        border-radius: 10px;
+
+		
+		&:after {
+			opacity: 0;
+            border-radius: 10px;
+
+		}
+	}
+}
+
+
+
+.readmore-btn {
+    background: $gradients-rhymeswithpurple;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    font-weight: 700;
+}
+
+.getapp-btn{
+  display: flex;
+  align-items: center;
+  height: 90px;
+  min-width: 260px;
+  border-radius: 5px;
+  padding: 0 12px;
+
+  border: 1px solid rgba(122,132,142,.5);
+  -webkit-transition: 450ms all;
+  transition: 450ms all;
+  p{
+      margin-bottom: 0;
+      color: $white;
+  }
+  span{
+      display: block;
+      font-size: 20px;
+      color: $white;
+  }
+  svg{
+      font-size: 35px;
+      color: $white;
+  }
+  &:hover{
+    color: $white;
+    background: $white;
+    border-color: transparent;
+      span,svg{
+        color: $white;
+      }
+  }
+}
+.apl-btn{
+  p{
+    color: $white;
+  }
+  svg{
+      font-size: 45px;
+      color: $white;
+  }
+  &:hover{
+    color: $white;
+    span,svg{
+        color: $white;
+      }
+  }
+}
+.appbutton {
+	line-height: 1.0;
+    margin: 40px;
+	text-align: center;
+    padding: 1em 3em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 10px !important;
+	transition: all 0.3s ease-out, -webkit-text-fill-color 0.3s ease-out;
+	position: relative;
+	display: inline-flex;
+	font-size: 1.5rem;
+  z-index: 99999;
+  opacity: 1;
+  border: 5px solid transparent !important;
+background:#ffffff;
+& svg {
+  color: var(--darkknight) !important;
+
+}
+&:hover {
+  color: $colors-darkknight;
+  -webkit-text-fill-color: var(--darkknight);
+      border-radius: 10px;
+background: #ffffff;
+border: 5px solid transparent !important;
+color: white !important;
+fill: white !important;
+& svg {
+  color: white !important;
+  fill: white !important;
+
+
+}
+}
+&::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background: $gradients-sunsjourney;
+  border-radius: 10px;
+  transition: all 1s ease-out;
+  opacity:  1;
+}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: block;
+		background: $gradients-sunsjourney;
+		border-radius: 10px;
+		transition: all 1s ease-out;
+    opacity:  1;
+	}
+  &:hover::after {
+    border-radius: 10px;
+    opacity: 1;
+    background: $gradients-sunsjourney;
+    border: 0;
+
+  }
+}

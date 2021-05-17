@@ -1,0 +1,40 @@
+body {
+    background: #F5F5F5;
+}
+section{ 
+    background: #EBEFF7
+}
+
+.blocker {
+    background: rgba(33,33,33,.9);
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.tall {
+    height: 100vh;
+}
+@media only screen and (max-width: 1024px) {
+    .app-screen-one-block {
+        background: #EBEFF7 !important;
+    }
+.blocker {
+    background: rgba(255,255,255,.9);
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 50px;
+    border-radius: 3px;
+    padding-bottom: 50px;
+}
+}
+@media only screen and (max-width: 480px){
+.button-group {
+place-items: center;
+display: grid;}
+}
+.subheading-type {
+    text-transform: uppercase;
+
+}

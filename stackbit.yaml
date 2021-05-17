@@ -1,0 +1,402 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+nodeVersion: '12'
+publishDir: public
+dataDir: _data
+pagesDir: src/reusecore/Button
+models:
+  button:
+    type: page
+    label: Button
+    match:
+      - '*'
+    fields: []
+  author:
+    type: data
+    label: Author
+    file: author.json
+    fields:
+      - type: string
+        name: name
+        label: Name
+      - type: string
+        name: position
+        label: Position
+      - type: string
+        name: email
+        label: Email
+      - type: image
+        name: avatar
+        label: Avatar
+      - type: object
+        name: social
+        label: Social
+        fields:
+          - type: object
+            name: twitter
+            label: Twitter
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: github
+            label: Github
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: youtube
+            label: Youtube
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: letterboxd
+            label: Letterboxd
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: linkedin
+            label: Linkedin
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: xing
+            label: Xing
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: string
+                name: url
+                label: Url
+  site:
+    type: data
+    label: Site
+    file: site.json
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: lang
+        label: Lang
+      - type: string
+        name: locale
+        label: Locale
+      - type: string
+        name: dir
+        label: Dir
+      - type: string
+        name: url
+        label: Url
+      - type: string
+        name: description
+        label: Description
+  token:
+    type: data
+    label: Token
+    folder: tokens
+    fields:
+      - type: object
+        name: colors
+        label: Colors
+        fields:
+          - type: string
+            name: urple
+            label: Urple
+          - type: string
+            name: joy
+            label: Joy
+          - type: string
+            name: noon
+            label: Noon
+          - type: string
+            name: fivepm
+            label: Fivepm
+          - type: string
+            name: warningwillrobinson
+            label: Warningwillrobinson
+          - type: string
+            name: darkknight
+            label: Darkknight
+          - type: string
+            name: gloom
+            label: Gloom
+          - type: string
+            name: eliotswhisper
+            label: Eliotswhisper
+          - type: string
+            name: jennysnumber
+            label: Jennysnumber
+          - type: string
+            name: prince
+            label: Prince
+          - type: string
+            name: bruce
+            label: Bruce
+          - type: string
+            name: barney
+            label: Barney
+          - type: string
+            name: bing
+            label: Bing
+      - type: object
+        name: dietcolors
+        label: Dietcolors
+        fields:
+          - type: string
+            name: dieturple
+            label: Dieturple
+          - type: string
+            name: dietjoy
+            label: Dietjoy
+      - type: object
+        name: grayscales
+        label: Grayscales
+        fields:
+          - type: string
+            name: innocence
+            label: Innocence
+          - type: string
+            name: smoothcriminal
+            label: Smoothcriminal
+          - type: string
+            name: partlysunny
+            label: Partlysunny
+          - type: string
+            name: dadada
+            label: Dadada
+          - type: string
+            name: gloomy
+            label: Gloomy
+          - type: string
+            name: partlycloudy
+            label: Partlycloudy
+          - type: string
+            name: prozac
+            label: Prozac
+          - type: string
+            name: trifecta
+            label: Trifecta
+          - type: string
+            name: thunderstorm
+            label: Thunderstorm
+          - type: string
+            name: paintit
+            label: Paintit
+      - type: object
+        name: gradients
+        label: Gradients
+        fields:
+          - type: string
+            name: dietrhymeswithpurple
+            label: Dietrhymeswithpurple
+          - type: string
+            name: rhymeswithpurple
+            label: Rhymeswithpurple
+          - type: string
+            name: sunsjourney
+            label: Sunsjourney
+          - type: string
+            name: darkknightrises
+            label: Darkknightrises
+          - type: string
+            name: grimmace
+            label: Grimmace
+      - type: object
+        name: text-colors
+        label: Text Colors
+        fields:
+          - type: string
+            name: default
+            label: Default
+          - type: string
+            name: h1
+            label: H 1
+          - type: string
+            name: h2
+            label: H 2
+          - type: string
+            name: h3
+            label: H 3
+          - type: string
+            name: h4
+            label: H 4
+          - type: string
+            name: h5
+            label: H 5
+          - type: string
+            name: h6
+            label: H 6
+          - type: string
+            name: p
+            label: P
+          - type: string
+            name: a
+            label: A
+      - type: object
+        name: size-scale
+        label: Size Scale
+        fields:
+          - type: string
+            name: sm
+            label: Sm
+          - type: string
+            name: md
+            label: Md
+          - type: string
+            name: lg
+            label: Lg
+          - type: string
+            name: xl
+            label: Xl
+      - type: object
+        name: font-sizes
+        label: Font Sizes
+        fields:
+          - type: string
+            name: h1
+            label: H 1
+          - type: string
+            name: h2
+            label: H 2
+          - type: string
+            name: h3
+            label: H 3
+          - type: string
+            name: h4
+            label: H 4
+          - type: string
+            name: h5
+            label: H 5
+          - type: string
+            name: h6
+            label: H 6
+          - type: string
+            name: p
+            label: P
+          - type: string
+            name: small
+            label: Small
+          - type: string
+            name: tiny
+            label: Tiny
+      - type: object
+        name: font-styles
+        label: Font Styles
+        fields:
+          - type: string
+            name: heading-family
+            label: Heading Family
+          - type: string
+            name: heading-style
+            label: Heading Style
+          - type: string
+            name: heading-weight
+            label: Heading Weight
+          - type: string
+            name: heading-line-height
+            label: Heading Line Height
+          - type: string
+            name: p-family
+            label: P Family
+          - type: string
+            name: p-style
+            label: P Style
+          - type: string
+            name: p-weight
+            label: P Weight
+          - type: string
+            name: p-line-height
+            label: P Line Height
+          - type: string
+            name: bold-weight
+            label: Bold Weight
+          - type: boolean
+            name: text-decoration-line
+            label: Text Decoration Line
+      - type: object
+        name: shadows
+        label: Shadows
+        fields:
+          - type: string
+            name: one
+            label: One
+          - type: string
+            name: two
+            label: Two
+          - type: string
+            name: three
+            label: Three
+          - type: string
+            name: four
+            label: Four
+          - type: string
+            name: five
+            label: Five
+          - type: string
+            name: six
+            label: Six
+      - type: object
+        name: logos
+        label: Logos
+        fields:
+          - type: string
+            name: main
+            label: Main
+          - type: string
+            name: side
+            label: Side
+          - type: string
+            name: darkmain
+            label: Darkmain
+          - type: string
+            name: darkside
+            label: Darkside
+      - type: object
+        name: icons
+        label: Icons
+        fields:
+          - type: string
+            name: main
+            label: Main
+          - type: string
+            name: side
+            label: Side
+          - type: string
+            name: darkmain
+            label: Darkmain
+          - type: string
+            name: darkside
+            label: Darkside
+  home:
+    type: page
+    label: home
+    fields:
+      - name: HeroHeadline
+        type: string
+        label: HeroHeadline
+        required: true

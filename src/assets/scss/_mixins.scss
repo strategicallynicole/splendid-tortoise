@@ -1,0 +1,149 @@
+@mixin linkysquare {
+  padding: 10px;
+  display: inline-block;
+  overflow: hidden;
+  &:before, &:after {
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $gradients-rhymeswithpurple;
+  }
+  &:before {
+    bottom: 0;
+    transform:  translateX(-100%);
+  }
+  &:after {
+    top: 0;
+    transform:  translateX(100%);
+  }
+  &:hover:before, &:hover:after {
+    transform:  translateX(0);
+  }
+}
+  
+  @mixin effectunderline {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+   
+  }
+
+  .effectunderline  {
+ 
+    &::after{
+      @include effectunderline;
+      &::hover{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    } }
+  }
+
+  @mixin hfont {
+    font-family: $font-styles-heading-family;
+    font-weight: 800;
+    font-style: italic;
+  }
+  .hfont {
+      @include hfont;
+  }
+  @mixin bfont {
+    font-family: $font-styles-p-family;
+      text-transform: uppercase;
+      font-weight: 400;
+  }
+  .bfont {
+      @include bfont;
+  }
+
+  @mixin hovershine {
+    -webkit-mask-image: none;
+&:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%) !important;
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+   } }
+  .hovershine {
+      @include hovershine;
+  }
+
+  @mixin linkylines {
+    
+      padding: 10px;
+      color: $text-colors-a;
+      text-shadow: none;
+      -webkit-transition: color 0.3s;
+      -moz-transition: color 0.3s;
+      transition: color 0.3s;
+    
+    
+    &::before, &::after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $text-colors-a;
+      content: '';
+      opacity: 0;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+      transition: opacity 0.3s, transform 0.3s;
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    
+    &::before {
+      top: 0;
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    
+   &::after {
+      bottom: 0;
+      -webkit-transform: translateY(10px);
+      -moz-transform: translateY(10px);
+      transform: translateY(10px);
+    }
+    
+    &:hover, &:focus {
+      color: #fff;
+    }
+    
+    &:hover::before,
+    &:focus::before,
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  }
+
+  .linklines {
+    @include linkylines;
+  }
+
+  @mixin shadowed {
+
+      filter: drop-shadow(-10px 8px 9px rgba(25, 1, 52, 0.5));
+      -webkit-filter: drop-shadow(-10px 8px 9px rgba(25, 1, 52, 0.5));
+      -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=-10, OffY=8, Color='#190134')";
+      filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=-10, OffY=8, Color='#190134')";
+  }
+
+  .shadow {
+    @include shadowed;
+  }
